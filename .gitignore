@@ -43,7 +43,8 @@ venv.bak/
 Thumbs.db
 
 # Streamlit local run cache
-.streamlit/
+.streamlit/*
+!.streamlit/config.toml
 
 # Temporary files
 scratch/
