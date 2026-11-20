@@ -1,0 +1,145 @@
+{
+    "disease_name": "Heart Disease",
+    "selected_model": "Logistic Regression",
+    "benchmark_results": {
+        "Logistic Regression": {
+            "accuracy": 0.8852,
+            "precision": 0.8387,
+            "recall": 0.9286,
+            "specificity": 0.8485,
+            "f1": 0.8814,
+            "roc_auc": 0.9665,
+            "true_negatives": 28,
+            "false_positives": 5,
+            "false_negatives": 2,
+            "true_positives": 26,
+            "confusion_matrix": [
+                [
+                    28,
+                    5
+                ],
+                [
+                    2,
+                    26
+                ]
+            ],
+            "best_cv_roc_auc": 0.9025,
+            "best_params": {
+                "C": 1.0,
+                "solver": "lbfgs"
+            }
+        },
+        "Decision Tree": {
+            "accuracy": 0.8033,
+            "precision": 0.7667,
+            "recall": 0.8214,
+            "specificity": 0.7879,
+            "f1": 0.7931,
+            "roc_auc": 0.8339,
+            "true_negatives": 26,
+            "false_positives": 7,
+            "false_negatives": 5,
+            "true_positives": 23,
+            "confusion_matrix": [
+                [
+                    26,
+                    7
+                ],
+                [
+                    5,
+                    23
+                ]
+            ],
+            "best_cv_roc_auc": 0.8448,
+            "best_params": {
+                "criterion": "entropy",
+                "max_depth": 3,
+                "min_samples_split": 2
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.8361,
+            "precision": 0.8214,
+            "recall": 0.8214,
+            "specificity": 0.8485,
+            "f1": 0.8214,
+            "roc_auc": 0.9437,
+            "true_negatives": 28,
+            "false_positives": 5,
+            "false_negatives": 5,
+            "true_positives": 23,
+            "confusion_matrix": [
+                [
+                    28,
+                    5
+                ],
+                [
+                    5,
+                    23
+                ]
+            ],
+            "best_cv_roc_auc": 0.9014,
+            "best_params": {
+                "max_depth": 4,
+                "min_samples_split": 2,
+                "n_estimators": 100
+            }
+        },
+        "XGBoost": {
+            "accuracy": 0.8689,
+            "precision": 0.8333,
+            "recall": 0.8929,
+            "specificity": 0.8485,
+            "f1": 0.8621,
+            "roc_auc": 0.9361,
+            "true_negatives": 28,
+            "false_positives": 5,
+            "false_negatives": 3,
+            "true_positives": 25,
+            "confusion_matrix": [
+                [
+                    28,
+                    5
+                ],
+                [
+                    3,
+                    25
+                ]
+            ],
+            "best_cv_roc_auc": 0.8839,
+            "best_params": {
+                "learning_rate": 0.01,
+                "max_depth": 3,
+                "n_estimators": 100,
+                "subsample": 0.8
+            }
+        }
+    },
+    "best_model_metrics": {
+        "accuracy": 0.8852,
+        "precision": 0.8387,
+        "recall": 0.9286,
+        "specificity": 0.8485,
+        "f1": 0.8814,
+        "roc_auc": 0.9665,
+        "true_negatives": 28,
+        "false_positives": 5,
+        "false_negatives": 2,
+        "true_positives": 26,
+        "confusion_matrix": [
+            [
+                28,
+                5
+            ],
+            [
+                2,
+                26
+            ]
+        ],
+        "best_cv_roc_auc": 0.9025,
+        "best_params": {
+            "C": 1.0,
+            "solver": "lbfgs"
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "disease_name": "Chronic Kidney Disease",
+    "selected_model": "XGBoost",
+    "benchmark_results": {
+        "Logistic Regression": {
+            "accuracy": 0.9875,
+            "precision": 1.0,
+            "recall": 0.98,
+            "specificity": 1.0,
+            "f1": 0.9899,
+            "roc_auc": 1.0,
+            "true_negatives": 30,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "true_positives": 49,
+            "confusion_matrix": [
+                [
+                    30,
+                    0
+                ],
+                [
+                    1,
+                    49
+                ]
+            ],
+            "best_cv_roc_auc": 1.0,
+            "best_params": {
+                "C": 10.0,
+                "solver": "lbfgs"
+            }
+        },
+        "Decision Tree": {
+            "accuracy": 0.9875,
+            "precision": 0.9804,
+            "recall": 1.0,
+            "specificity": 0.9667,
+            "f1": 0.9901,
+            "roc_auc": 0.9993,
+            "true_negatives": 29,
+            "false_positives": 1,
+            "false_negatives": 0,
+            "true_positives": 50,
+            "confusion_matrix": [
+                [
+                    29,
+                    1
+                ],
+                [
+                    0,
+                    50
+                ]
+            ],
+            "best_cv_roc_auc": 0.9817,
+            "best_params": {
+                "criterion": "entropy",
+                "max_depth": 3,
+                "min_samples_split": 2
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.9875,
+            "precision": 0.9804,
+            "recall": 1.0,
+            "specificity": 0.9667,
+            "f1": 0.9901,
+            "roc_auc": 1.0,
+            "true_negatives": 29,
+            "false_positives": 1,
+            "false_negatives": 0,
+            "true_positives": 50,
+            "confusion_matrix": [
+                [
+                    29,
+                    1
+                ],
+                [
+                    0,
+                    50
+                ]
+            ],
+            "best_cv_roc_auc": 0.9996,
+            "best_params": {
+                "max_depth": 4,
+                "min_samples_split": 2,
+                "n_estimators": 50
+            }
+        },
+        "XGBoost": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "specificity": 1.0,
+            "f1": 1.0,
+            "roc_auc": 1.0,
+            "true_negatives": 30,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "true_positives": 50,
+            "confusion_matrix": [
+                [
+                    30,
+                    0
+                ],
+                [
+                    0,
+                    50
+                ]
+            ],
+            "best_cv_roc_auc": 0.9988,
+            "best_params": {
+                "learning_rate": 0.05,
+                "max_depth": 3,
+                "n_estimators": 100,
+                "subsample": 0.8
+            }
+        }
+    },
+    "best_model_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "true_negatives": 30,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_positives": 50,
+        "confusion_matrix": [
+            [
+                30,
+                0
+            ],
+            [
+                0,
+                50
+            ]
+        ],
+        "best_cv_roc_auc": 0.9988,
+        "best_params": {
+            "learning_rate": 0.05,
+            "max_depth": 3,
+            "n_estimators": 100,
+            "subsample": 0.8
+        }
+    }
+}

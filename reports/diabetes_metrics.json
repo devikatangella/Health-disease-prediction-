@@ -1,0 +1,142 @@
+{
+    "disease_name": "Diabetes",
+    "selected_model": "XGBoost",
+    "benchmark_results": {
+        "Logistic Regression": {
+            "accuracy": 0.7429,
+            "precision": 0.7297,
+            "recall": 0.7717,
+            "specificity": 0.7141,
+            "f1": 0.7501,
+            "roc_auc": 0.8172,
+            "true_negatives": 5049,
+            "false_positives": 2021,
+            "false_negatives": 1614,
+            "true_positives": 5455,
+            "confusion_matrix": [
+                [
+                    5049,
+                    2021
+                ],
+                [
+                    1614,
+                    5455
+                ]
+            ],
+            "best_cv_roc_auc": 0.8239,
+            "best_params": {
+                "C": 0.1,
+                "solver": "lbfgs"
+            }
+        },
+        "Decision Tree": {
+            "accuracy": 0.7278,
+            "precision": 0.7069,
+            "recall": 0.7782,
+            "specificity": 0.6774,
+            "f1": 0.7408,
+            "roc_auc": 0.7949,
+            "true_negatives": 4789,
+            "false_positives": 2281,
+            "false_negatives": 1568,
+            "true_positives": 5501,
+            "confusion_matrix": [
+                [
+                    4789,
+                    2281
+                ],
+                [
+                    1568,
+                    5501
+                ]
+            ],
+            "best_cv_roc_auc": 0.8008,
+            "best_params": {
+                "max_depth": 6,
+                "min_samples_split": 20
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.7434,
+            "precision": 0.7224,
+            "recall": 0.7905,
+            "specificity": 0.6963,
+            "f1": 0.7549,
+            "roc_auc": 0.813,
+            "true_negatives": 4923,
+            "false_positives": 2147,
+            "false_negatives": 1481,
+            "true_positives": 5588,
+            "confusion_matrix": [
+                [
+                    4923,
+                    2147
+                ],
+                [
+                    1481,
+                    5588
+                ]
+            ],
+            "best_cv_roc_auc": 0.8204,
+            "best_params": {
+                "min_samples_split": 10
+            }
+        },
+        "XGBoost": {
+            "accuracy": 0.7452,
+            "precision": 0.7248,
+            "recall": 0.7904,
+            "specificity": 0.7,
+            "f1": 0.7562,
+            "roc_auc": 0.8215,
+            "true_negatives": 4949,
+            "false_positives": 2121,
+            "false_negatives": 1482,
+            "true_positives": 5587,
+            "confusion_matrix": [
+                [
+                    4949,
+                    2121
+                ],
+                [
+                    1482,
+                    5587
+                ]
+            ],
+            "best_cv_roc_auc": 0.828,
+            "best_params": {
+                "learning_rate": 0.1,
+                "max_depth": 4,
+                "n_estimators": 100
+            }
+        }
+    },
+    "best_model_metrics": {
+        "accuracy": 0.7452,
+        "precision": 0.7248,
+        "recall": 0.7904,
+        "specificity": 0.7,
+        "f1": 0.7562,
+        "roc_auc": 0.8215,
+        "true_negatives": 4949,
+        "false_positives": 2121,
+        "false_negatives": 1482,
+        "true_positives": 5587,
+        "confusion_matrix": [
+            [
+                4949,
+                2121
+            ],
+            [
+                1482,
+                5587
+            ]
+        ],
+        "best_cv_roc_auc": 0.828,
+        "best_params": {
+            "learning_rate": 0.1,
+            "max_depth": 4,
+            "n_estimators": 100
+        }
+    }
+}
